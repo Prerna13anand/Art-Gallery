@@ -1,51 +1,111 @@
-# Art Gallery Website 🎨
+# 🎨 Art Gallery - Art Sale Management System
 
-This is a web-based application for an online art gallery built using PHP and MySQL. It allows users to browse artwork, artists to manage their pieces, and an administrator to oversee the platform.
-
-## About The Project
-
-*(**[IMPORTANT]** Replace this paragraph with your own project description. Talk about what problem it solves, what technologies you used, and what you learned. For example:)*
-
-This project was developed to create a digital platform for artists to showcase their work and for art enthusiasts to discover new pieces. The system features separate functionalities for regular users, artists, and an admin. I built this using core PHP for the backend logic, MySQL for the database, and standard HTML/CSS/JavaScript for the front-end. It was a great learning experience in database management and dynamic web development.
+**Art Gallery** is a web-based **Art Sale Management System** built using **PHP and MySQL**.  
+The application provides a platform where users can explore artworks, add them to a cart, submit queries (with file uploads), and simulate purchases. An admin can view contact submissions and manage user data through the database.
 
 ---
 
-## Getting Started
+## ✨ Core Features
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-You will need a local server environment. **XAMPP** is highly recommended as it includes everything you need.
-* [Download XAMPP](https://www.apachefriends.org/download.html)
-
-### Installation and Setup
-
-1.  **Clone the Repository**
-    Open your terminal and clone the project into a folder of your choice.
-    ```sh
-    git clone [https://github.com/Prerna13anand/Art-Gallery.git](https://github.com/Prerna13anand/Art-Gallery.git)
-    ```
-
-2.  **Start XAMPP**
-    Open the **XAMPP Control Panel** and start the **Apache** and **MySQL** modules.
-
-    ![XAMPP Control Panel](https://i.imgur.com/k6p5J78.png)
-
-3.  **Create the Database**
-    * Open your web browser and go to `http://localhost/phpmyadmin/`.
-    * Click on the **Databases** tab.
-    * In the "Create database" field, enter `art_gallery` and click **Create**.
-    * Select the newly created `art_gallery` database from the left-hand sidebar.
-    * Click on the **Import** tab.
-    * Click "Choose File" and navigate to the project folder you cloned. Select the `database/art_gallery.sql` file.
-    * Scroll down and click the **Go** button to import the schema and data.
-
-4.  **Move Project Files**
-    * Move the entire cloned project folder (`Art-Gallery`) into the `htdocs` folder inside your XAMPP installation directory (e.g., `C:/xampp/htdocs/`).
-
-5.  **Run the Project**
-    * You're all set! Open your web browser and navigate to:
-    * `http://localhost/Art-Gallery/`
+- **User Registration / Login / Logout**  
+- **Dynamic Art Gallery**  
+  - Filter artworks  
+  - Add or remove items dynamically from the **Cart**  
+  - Real-time cart updates with total amount calculation  
+- **Shopping Cart & Checkout**  
+  - Cart stored using **LocalStorage / SessionStorage**  
+  - Quantity management and removal of items  
+- **Contact Submission Form**  
+  - Users can send messages and **upload files**  
+  - Submissions are saved to the **database**  
+- **Admin Access**  
+  - View submitted contact forms and download files via `view_submissions.php`  
+  - Monitor registered users in `phpMyAdmin`
 
 ---
+
+## ⚙️ Technology Stack
+
+| Technology | Description |
+|------------|-------------|
+| **PHP** | Backend logic |
+| **MySQL** | Database (phpMyAdmin) |
+| **HTML / CSS / JavaScript** | Frontend interface |
+| **LocalStorage / SessionStorage** | Cart management |
+| **XAMPP** | Local server environment |
+
+---
+
+## 🗄️ Database Setup (MySQL)
+
+**Database File:**  
+Use the provided **`art_gallery.sql`** for quick setup.
+
+### Contains:
+
+- **`users` table** – Stores user accounts (username, password hash)  
+- **`contact_submissions` table** – Stores contact details, message, file upload, and timestamp  
+
+---
+
+## 🚀 Installation & XAMPP Setup
+
+### **Prerequisites**
+
+- Install **[XAMPP](https://www.apachefriends.org/index.html)**
+
+---
+
+### **Steps to Run the Project**
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/Prerna13anand/Art-Gallery.git
+````
+
+2. **Move Project Files**
+
+Copy the `Art-Gallery` folder into:
+
+```
+C:/xampp/htdocs/
+```
+
+3. **Start XAMPP**
+
+* Open **XAMPP Control Panel**
+* Start **Apache** and **MySQL**
+
+4. **Import the Database**
+
+* Open **phpMyAdmin** at:
+  `http://localhost/phpmyadmin/`
+
+* Create a new database named:
+
+```
+art_gallery
+```
+
+* Go to **Import** → Select **art\_gallery.sql** → Click **Go**
+
+5. **Run the Application**
+
+Open your browser and visit:
+
+```
+http://localhost/Art-Gallery/
+```
+
+---
+
+## 📥 Repository
+
+GitHub Link: [https://github.com/Prerna13anand/Art-Gallery.git](https://github.com/Prerna13anand/Art-Gallery.git)
+
+```
+
+---
+
+
